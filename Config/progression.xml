@@ -1,0 +1,31 @@
+<slprogression>
+	<remove xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group[2]/triggered_effect[@buff='buffInjuryStunned01Shotgun']"/>
+	<remove xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group[2]/triggered_effect[@buff='buffInjuryStunned02Shotgun']"/>
+	<remove xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group[2]/triggered_effect[@buff='buffInjuryStunned03Shotgun']"/>
+	<remove xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group[2]/triggered_effect[@buff='buffInjuryCrippled01']"/>
+
+	<append xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group[2]">
+		<effect_group>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="1"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="2"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown02">
+				<requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="3"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="45"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown02">
+				<requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="4"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffInjuryKnockdown02">
+				<requirement name="ProgressionLevel" progression_name="perkBoomstick" operation="Equals" value="5"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="75"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+</slprogression>

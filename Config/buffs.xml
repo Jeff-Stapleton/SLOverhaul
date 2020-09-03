@@ -1,0 +1,42 @@
+<slbuffs>
+    <!-- Charismatic Nature overhaul -->
+    <remove xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[4]/passive_effect[@name='AttributeLevel']"/>
+
+    <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[1]/passive_effect[@name='HealthMax']/@operation">perc_add</set>
+    <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[1]/passive_effect[@name='StaminaMax']/@operation">perc_add</set>
+    <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[1]/passive_effect[@name='HealthMax']/@value">.05</set>
+    <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[1]/passive_effect[@name='StaminaMax']/@value">.05</set>
+
+    <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[2]/passive_effect[@name='EntityDamage']/@value">.05</set>
+    <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[2]/passive_effect[@name='BlockDamage']/@value">.05</set>
+
+    <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[3]/passive_effect[@name='HealthLoss']/@value">-.02</set>
+
+
+    <append xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[1]">
+        <passive_effect name="EntityDamage" operation="perc_add" value=".05"/>
+        <passive_effect name="BlockDamage" operation="perc_add" value=".05" tags="melee"/>
+        <passive_effect name="HealthLoss" operation="perc_add" value="-.02"/>
+    </append>
+
+    <append xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[2]">
+        <passive_effect name="HealthMax" operation="perc_add" value=".05"/>
+        <passive_effect name="StaminaMax" operation="perc_add" value=".05"/>
+        <passive_effect name="HealthLoss" operation="perc_add" value="-.02"/>
+    </append>
+
+    <append xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[3]">
+        <passive_effect name="HealthMax" operation="perc_add" value=".05"/>
+        <passive_effect name="StaminaMax" operation="perc_add" value=".05"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value=".05"/>
+        <passive_effect name="BlockDamage" operation="perc_add" value=".05" tags="melee"/>
+    </append>
+
+    <append xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[4]">
+        <passive_effect name="HealthMax" operation="perc_add" value=".05"/>
+        <passive_effect name="StaminaMax" operation="perc_add" value=".05"/>
+        <passive_effect name="EntityDamage" operation="perc_add" value=".05"/>
+        <passive_effect name="BlockDamage" operation="perc_add" value=".05" tags="melee"/>
+        <passive_effect name="HealthLoss" operation="perc_add" value="-.02"/>
+    </append>
+</slbuffs> 
