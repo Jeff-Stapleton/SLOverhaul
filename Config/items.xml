@@ -1,8 +1,13 @@
 <slitems>
-<!-- Allow spears to stack -->
-    <set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@name='Stacknumber']/@value">10</set>
-    <set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='Stacknumber']/@value">10</set>
-    <set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='Stacknumber']/@value">10</set>
+    <!-- Allow spears to stack -->
+    <set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attStrength,perkBrawler,canHaveCosmetic</set>
+    <set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attStrength,perkBrawler,canHaveCosmetic</set>
+    <set xpath="/items/item[@name='meleeHandPlayer']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfBlows,attStrength,perkBrawler</set>
+    <set xpath="/items/item[@name='meleeToolFarmT1IronHoe']/property[@name='Tags']/@value">melee,medium,tool,perkLivingOffTheLand,canHaveCosmetic</set>
+    <set xpath="/items/item[@name='gunMGT1AK47']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attPerception,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic</set>
+    <set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attPerception,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic</set>
+    <set xpath="/items/item[@name='gunMGT3M60']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,magazine,drumMagazine,bottomAttachments,attPerception,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic</set>
+    <set xpath="/items/item[@name='apparelToughGuySunglasses']/effect_group[1]/passive_effect[@name='AttributeLevel']/@tags">attStrength</set>
 
     <!-- Increase the amount of hunger restored by food -->
     <set xpath="/items/item[@name='foodHoney']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">16</set>

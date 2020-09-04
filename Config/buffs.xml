@@ -39,4 +39,8 @@
         <passive_effect name="BlockDamage" operation="perc_add" value=".05" tags="melee"/>
         <passive_effect name="HealthLoss" operation="perc_add" value="-.02"/>
     </append>
+    <!-- Remove Fortitude -->
+    <set xpath="/buffs/buff[@name='buffIllPneumonia01']/effect_group[1]/passive_effect[@name='AttributeLevel']/@tags">attStrength</set>
+    <set xpath="/buffs/buff[@name='buffShamChowder']/effect_group[3]/passive_effect[@name='AttributeLevel']/@tags">attStrength</set>
+
 </slbuffs> 
