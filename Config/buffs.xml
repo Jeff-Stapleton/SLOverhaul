@@ -1,5 +1,5 @@
 <slbuffs>
-    <!-- Charismatic Nature overhaul -->
+    <!-- Charismatic Nature Overhaul -->
     <remove xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[4]/passive_effect[@name='AttributeLevel']"/>
 
     <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[1]/passive_effect[@name='HealthMax']/@operation">perc_add</set>
