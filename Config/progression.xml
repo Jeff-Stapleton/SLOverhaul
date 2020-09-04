@@ -96,6 +96,30 @@
 	<set xpath="/progression/perks/perk[@name='perkTheHuntsman']/level_requirements[@level='4']/requirement[@name='ProgressionLevel']/@desc_key">reqPerceptionLevel07</set>
 	<set xpath="/progression/perks/perk[@name='perkTheHuntsman']/level_requirements[@level='5']/requirement[@name='ProgressionLevel']/@desc_key">reqPerceptionLevel10</set>
 	<!-- Agility Overhaul -->
+	<append xpath="/progression/perks/perk[@name='perkJavelinMaster']">
+		<effect_group>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="1"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="2"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown02">
+				<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="3"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown02">
+				<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="4"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown02">
+				<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="5"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="100"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
 	<set xpath="/progression/perks/perk[@name='perkJavelinMaster']/@parent">skillAgilityCombat</set>
 	<set xpath="/progression/perks/perk[@name='perkJavelinMaster']/level_requirements[@level='1']/requirement[@name='ProgressionLevel']/@progression_name">attAgility</set>
 	<set xpath="/progression/perks/perk[@name='perkJavelinMaster']/level_requirements[@level='2']/requirement[@name='ProgressionLevel']/@progression_name">attAgility</set>
