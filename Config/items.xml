@@ -1,5 +1,61 @@
 <slitems>
-    <!-- Allow spears to stack -->
+    <append xpath="/items">
+        <item name="bookMasterChefVol1"> <!-- first book -->
+        <property name="Extends" value="bookFiremansAlmanacHeat"/>
+        <property name="CustomIcon" value="bookSpearHunter1Damage"/>
+        <property name="DescriptionKey" value="perkMasterChefRank1LongDesc"/>
+        <property name="Unlocks" value="perkMasterChefVol1"/>
+        <effect_group tiered="false">
+            <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMasterChefVol1" level="-1"/>
+            <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMasterChefVol5" level="-1">
+                <requirement name="PerksUnlocked" skill_name="skillSpearHunter" operation="GTE" value="4"/></triggered_effect>
+            <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+                <requirement name="PerksUnlocked" skill_name="skillSpearHunter" operation="GTE" value="4"/></triggered_effect>
+        </effect_group>
+        </item>
+        <item name="bookMasterChefVol2">
+            <property name="Extends" value="bookMasterChefVol1"/>
+            <property name="DescriptionKey" value="perkMasterChefRank2LongDesc"/>
+            <property name="Unlocks" value="perkMasterChefVol2"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMasterChefVol2" level="-1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMasterChefVol5" level="-1">
+                    <requirement name="PerksUnlocked" skill_name="perkMasterChef" operation="GTE" value="4"/></triggered_effect>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+                    <requirement name="PerksUnlocked" skill_name="perkMasterChef" operation="GTE" value="4"/></triggered_effect>
+            </effect_group>
+        </item>
+        <item name="bookMasterChefVol3">
+            <property name="Extends" value="bookMasterChefVol1"/>
+            <property name="DescriptionKey" value="perkMasterChefRank3LongDesc"/>
+            <property name="Unlocks" value="perkMasterChefVol3"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMasterChefVol3" level="-1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMasterChefVol5" level="-1">
+                    <requirement name="PerksUnlocked" skill_name="perkMasterChef" operation="GTE" value="4"/></triggered_effect>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+                    <requirement name="PerksUnlocked" skill_name="perkMasterChef" operation="GTE" value="4"/></triggered_effect>
+            </effect_group>
+        </item>
+        <item name="bookMasterChefVol4">
+            <property name="Extends" value="bookMasterChefVol1"/>
+            <property name="DescriptionKey" value="perkMasterChefRank4LongDesc"/>
+            <property name="Unlocks" value="perkMasterChefVol4"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMasterChefVol4" level="-1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkMasterChefVol5" level="-1">
+                    <requirement name="PerksUnlocked" skill_name="perkMasterChef" operation="GTE" value="4"/></triggered_effect>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+                    <requirement name="PerksUnlocked" skill_name="perkMasterChef" operation="GTE" value="4"/></triggered_effect>
+            </effect_group>
+        </item>
+    </append>
+
+    <!-- Remove Fortitude from all items -->
     <set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attStrength,perkBrawler,canHaveCosmetic</set>
     <set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attStrength,perkBrawler,canHaveCosmetic</set>
     <set xpath="/items/item[@name='meleeHandPlayer']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfBlows,attStrength,perkBrawler</set>
