@@ -1,0 +1,3 @@
+<slgamestages>
+    <set xpath="/gamestages/config/@daysAliveChangeWhenKilled">0</set>
+</slgamestages>
