@@ -10,19 +10,19 @@
     <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[2]/passive_effect[@name='EntityDamage']/@value">.05</set>
     <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[2]/passive_effect[@name='BlockDamage']/@value">.05</set>
 
-    <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[3]/passive_effect[@name='HealthLoss']/@value">-.02</set>
+    <set xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[3]/passive_effect[@name='HealthLoss']/@value">-.025</set>
 
 
     <append xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[1]">
         <passive_effect name="EntityDamage" operation="perc_add" value=".05"/>
         <passive_effect name="BlockDamage" operation="perc_add" value=".05" tags="melee"/>
-        <passive_effect name="HealthLoss" operation="perc_add" value="-.02"/>
+        <passive_effect name="HealthLoss" operation="perc_add" value="-.025"/>
     </append>
 
     <append xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[2]">
         <passive_effect name="HealthMax" operation="perc_add" value=".05"/>
         <passive_effect name="StaminaMax" operation="perc_add" value=".05"/>
-        <passive_effect name="HealthLoss" operation="perc_add" value="-.02"/>
+        <passive_effect name="HealthLoss" operation="perc_add" value="-.025"/>
     </append>
 
     <append xpath="/buffs/buff[@name='buffPerkCharismaticNature']/effect_group[3]">
@@ -37,7 +37,7 @@
         <passive_effect name="StaminaMax" operation="perc_add" value=".05"/>
         <passive_effect name="EntityDamage" operation="perc_add" value=".05"/>
         <passive_effect name="BlockDamage" operation="perc_add" value=".05" tags="melee"/>
-        <passive_effect name="HealthLoss" operation="perc_add" value="-.02"/>
+        <passive_effect name="HealthLoss" operation="perc_add" value="-.025"/>
     </append>
     <!-- Remove Fortitude -->
     <set xpath="/buffs/buff[@name='buffIllPneumonia01']/effect_group[1]/passive_effect[@name='AttributeLevel']/@tags">attStrength</set>
