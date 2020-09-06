@@ -55,15 +55,35 @@
         </item>
     </append>
 
-    <!-- Remove Fortitude from all items -->
+    <!-- Convert fist items to strength -->
     <set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attStrength,perkBrawler,canHaveCosmetic</set>
     <set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfBlows,weapon,attStrength,perkBrawler,canHaveCosmetic</set>
     <set xpath="/items/item[@name='meleeHandPlayer']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfBlows,attStrength,perkBrawler</set>
     <set xpath="/items/item[@name='meleeToolFarmT1IronHoe']/property[@name='Tags']/@value">melee,medium,tool,perkLivingOffTheLand,canHaveCosmetic</set>
+
+    <set xpath="/items/item[@name='apparelToughGuySunglasses']/effect_group[1]/passive_effect[@name='AttributeLevel']/@tags">attStrength</set>
+
+    <!-- Convert machine gun items to perception -->
     <set xpath="/items/item[@name='gunMGT1AK47']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attPerception,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic</set>
     <set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attPerception,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic</set>
     <set xpath="/items/item[@name='gunMGT3M60']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,magazine,drumMagazine,bottomAttachments,attPerception,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic</set>
-    <set xpath="/items/item[@name='apparelToughGuySunglasses']/effect_group[1]/passive_effect[@name='AttributeLevel']/@tags">attStrength</set>
+
+     <!-- Convert spear items to agility -->
+    <set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@name='Tags']/@value">melee,grunting,medium,weapon,meleeWeapon,longShaft,attAgility,perkJavelinMaster,canHaveCosmetic,thrownWeapon</set>
+
+     <!-- Convert exposive items to intellect -->
+    <set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Tags']/@value">ammo,weapon,attIntellect,perkDemolitionsExpert</set>
+    <set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Tags']/@value">ammo,weapon,attIntellect,perkDemolitionsExpert</set>
+    <set xpath="/items/item[@name='thrownTimedCharge']/property[@name='Tags']/@value">ammo,weapon,attIntellect,perkDemolitionsExpert</set>
+    <set xpath="/items/item[@name='thrownDynamite']/property[@name='Tags']/@value">ammo,weapon,attIntellect,perkDemolitionsExpert</set>
+    <set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/property[@name='Tags']/@value">ammo,weapon,attIntellect,perkDemolitionsExpert</set>
+    <set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,barrelAttachments,noSilencer,sideAttachments,smallTopAttachments</set>
+    
+    <!-- Convert wrench items to intellect -->
+    <set xpath="/items/item[@name='meleeToolSalvageWrenchAdmin']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,attIntellect,perkSalvageOperations,admin,noMods</set>
+    <set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,longShaft,attIntellect,perkSalvageOperations,canHaveCosmetic</set>
+    <set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,attIntellect,perkSalvageOperations,canHaveCosmetic</set>
+    <set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,attIntellect,perkSalvageOperations,canHaveCosmetic</set>
 
     <!-- Increase the amount of hunger restored by food -->
     <set xpath="/items/item[@name='foodHoney']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">16</set>
