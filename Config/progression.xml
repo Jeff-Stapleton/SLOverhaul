@@ -47,6 +47,15 @@
 	<set xpath="/progression/perks/perk[@name='perkHealingFactor']/level_requirements[@level='3']/requirement[@name='ProgressionLevel']/@desc_key">reqStrengthLevel05</set>
 	<set xpath="/progression/perks/perk[@name='perkHealingFactor']/level_requirements[@level='4']/requirement[@name='ProgressionLevel']/@desc_key">reqStrengthLevel07</set>
 	<set xpath="/progression/perks/perk[@name='perkHealingFactor']/level_requirements[@level='5']/requirement[@name='ProgressionLevel']/@desc_key">reqStrengthLevel10</set>
+
+	<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group[2]/triggered_effect[1]/@target">otherAOE</set>
+	<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group[2]/triggered_effect[2]/@target">otherAOE</set>
+	<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group[2]/triggered_effect[3]/@target">otherAOE</set>
+	<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group[2]/triggered_effect[4]/@target">otherAOE</set>
+	<set xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group[2]/triggered_effect[5]/@target">otherAOE</set>
+	<remove xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group[2]/triggered_effect[6]"/>
+	<remove xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group[2]/triggered_effect[7]"/>
+	<remove xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group[2]/triggered_effect[8]"/>
 	<!-- Perception Overhaul -->
 	<set xpath="/progression/perks/perk[@name='perkMachineGunner']/@parent">skillPerceptionCombat</set>
 	<set xpath="/progression/perks/perk[@name='perkMachineGunner']/level_requirements[@level='1']/requirement[@name='ProgressionLevel']/@progression_name">attPerception</set>
