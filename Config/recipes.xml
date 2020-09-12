@@ -1,2 +1,4 @@
-<set xpath="/recipes/recipes[@name='thrownAmmoMolotovCocktail']/ingredient[@name='ammoGasCan']/@count">100</set>
-<set xpath="/recipes/recipes[@name='medicalAloeCream']/ingredient[@name='resourceCropAloeLeaf']/@count">1</set>
+<slrecipes>
+    <set xpath="/recipes/recipes[@name='thrownAmmoMolotovCocktail']/ingredient[@name='ammoGasCan']/@count">100</set>
+    <set xpath="/recipes/recipes[@name='medicalAloeCream']/ingredient[@name='resourceCropAloeLeaf']/@count">1</set>
+</slrecipes>
