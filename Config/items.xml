@@ -157,7 +157,7 @@
     <set xpath="/items/item[@name='foodCropPumpkin']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">6</set>
     <!-- Increase the stack count of resource items-->
     <set xpath="/items/item[@name='resourceFeather']/property[@name='Stacknumber']/@value">6000</set>
-
+    <set xpath="/items/item[@name='resourceSewingKit']/property[@name='Stacknumber']/@value">100</set>
     <!-- Increase the stack count of food items-->
     <set xpath="/items/item[@name='foodHoney']/property[@name='Stacknumber']/@value">100</set>
     <set xpath="/items/item[@name='foodCanBeef']/property[@name='Stacknumber']/@value">100</set>
