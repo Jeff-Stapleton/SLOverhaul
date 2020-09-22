@@ -242,6 +242,12 @@
     <set xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='Stacknumber']/@value">100</set>
     <set xpath="/items/item[@name='drugAntibiotics']/property[@name='Stacknumber']/@value">100</set>
     <set xpath="/items/item[@name='drugSteroids']/property[@name='Stacknumber']/@value">100</set>
+    <!-- Increase the duration of common drug items -->
+    <!-- <set xpath="/items/item[@name='drugVitamins']/property[@name='Stacknumber']/@value">100</set> -->
+    <set xpath="/items/item[@name='drugPainkillers']/effect_group/triggered_effect[@operation='add']/@value">543</set>
+    <!-- <set xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='Stacknumber']/@value">100</set>
+    <set xpath="/items/item[@name='drugAntibiotics']/property[@name='Stacknumber']/@value">100</set>
+    <set xpath="/items/item[@name='drugSteroids']/property[@name='Stacknumber']/@value">100</set> -->
     <!-- Increase the stack count of ammo items-->
     <set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">500</set>
     <set xpath="/items/item[@name='ammo9mmBulletHP']/property[@name='Stacknumber']/@value">500</set>
